@@ -17,7 +17,7 @@ public class AppController {
 	@RequestMapping(value = "/data", method = RequestMethod.GET)
 	public ResponseEntity<String> test() {
 
-		log.info("test app 1");
+		log.info("test app 1 ");
 
 		return new ResponseEntity<>("hi from app1", HttpStatus.OK);
 	}
