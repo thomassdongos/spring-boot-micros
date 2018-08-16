@@ -1,5 +1,14 @@
 echo "hi"
 
+
+cd auth-center
+
+start cmd.exe /k "mvnw clean spring-boot:run"
+
+cd ..
+
+choice /d y /t 10 > nul
+
 cd eureka-server
 
 start cmd.exe /k "mvnw clean spring-boot:run"
@@ -23,24 +32,11 @@ start cmd.exe /k "mvnw clean spring-boot:run"
 
 cd ..
 
-choice /d y /t 10 > nul
 
-cd app1-2
-
-start cmd.exe /k "mvnw clean spring-boot:run"
-
-cd ..
 
 choice /d y /t 10 > nul
 
-cd app2-1
-
-start cmd.exe /k "mvnw clean spring-boot:run"
-
-cd ..
-choice /d y /t 10 > nul
-
-cd app2-2
+cd resource-center
 
 start cmd.exe /k "mvnw clean spring-boot:run"
 
